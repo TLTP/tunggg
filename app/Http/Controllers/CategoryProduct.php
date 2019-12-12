@@ -38,13 +38,18 @@ class CategoryProduct extends Controller
     	Session::put('message','Kích hoạt danh mục sản phẩm thành công.');
     	return Redirect::to('all-category-product');
     }
-    public function edit_category_product($category_product_id){
-    		$edit_category_product = DB::table('tbl_category_product')->where('category_id',$category_product_id)->get();
-		$manager_category_product = view('admin.edit_category_product')->with('edit_category_product',$edit_category_product);
-		return view('admin_layout')->with('admin.edit_category_product',$manager_category_product );
+	   	
+	public function edit_category_product($category_product_id){
+        $this->AuthLogin();
+        $edit_category_product = DB::table('tbl_category_product')->where('category_id',$category_product_id)->get();
 
+        $manager_category_product  = view('admin.edit_category_product')->with('edit_category_product',$edit_category_product);
+
+        return view('admin_layout')->with('admin.edit_category_product', $manager_category_product);
     }
-    public function delete_category_product($category_product_id){}
+    public function delete_category_product($category_product_id){
+    	
+    }
 
 
 }
