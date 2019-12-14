@@ -31,11 +31,21 @@ class ProductController extends Controller
 	$data ['category_id']=$request->product_cate;
 	$data ['brand_id']=$request->product_brand;
 	$data ['product_status']=$request->product_status;
+	$get_image=$request->file('product_image');
+		if($get_image)
+		{
+			$new_image=rand(0,99).'.'.$get_image->getClientOriginalExtension();
+			$get_image->move('puclic/uploads/product',$new_image);
+			$data['product_image']=$new_image;
+			DB::table('tbl_product')->insert($data);
+    		Session::put('message','Thêm sản phẩm thành công.');
+    		return Redirect::to('add-product');
+		}
 
-
-	DB::table('tbl_product')->insert($data);
-    	Session::put('message','Thêm thương hiệu thành công.');
-    	return Redirect::to('add-brand-product');
+		$data['product_image']='';
+		DB::table('tbl_product')->insert($data);
+    	Session::put('message','Thêm sản phẩm thành công.');
+    	return Redirect::to('add-product');
 	}
 	 public function unactive_product($brand_product_id)
     {
