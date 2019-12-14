@@ -40,7 +40,6 @@ class CategoryProduct extends Controller
     }
 	   	
 	public function edit_category_product($category_product_id){
-        $this->AuthLogin();
         $edit_category_product = DB::table('tbl_category_product')->where('category_id',$category_product_id)->get();
 
         $manager_category_product  = view('admin.edit_category_product')->with('edit_category_product',$edit_category_product);
