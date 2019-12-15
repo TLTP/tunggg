@@ -33,8 +33,8 @@
                     <div class="col-sm-6">
                         <div class="contactinfo">
                             <ul class="nav nav-pills">
-                                <li><a href="#"><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
-                                <li><a href="#"><i class="fa fa-envelope"></i> info@domain.com</a></li>
+                                <li><a href="#"><i class="fa fa-phone"></i> +84.949698125</a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i> truonghoangtung1408@gmail.com</a></li>
                             </ul>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
                                     <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Canada</a></li>
+                                    <li><a href="#">vn</a></li>
                                     <li><a href="#">UK</a></li>
                                 </ul>
                             </div>
@@ -78,8 +78,8 @@
                                     <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Canadian Dollar</a></li>
-                                    <li><a href="#">Pound</a></li>
+                                    <li><a href="#">VND</a></li>
+                                    <li><a href="#">US</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -87,11 +87,11 @@
                     <div class="col-sm-8">
                         <div class="shop-menu pull-right">
                             <ul class="nav navbar-nav">
-                                <li><a href="#"><i class="fa fa-user"></i> Account</a></li>
-                                <li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
+                                <li><a href="#"><i class="fa fa-user"></i> TÀI KHOẢN</a></li>
+                                <li><a href="#"><i class="fa fa-star"></i> </a></li>
                                 <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-                                <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-                                <li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
+                                <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> GIỎ HÀNG</a></li>
+                                <li><a href="login.html"><i class="fa fa-lock"></i> ĐĂNG NHẬP</a></li>
                             </ul>
                         </div>
                     </div>
@@ -113,24 +113,19 @@
                         </div>
                         <div class="mainmenu pull-left">
                             <ul class="nav navbar-nav collapse navbar-collapse">
-                                <li><a href="{{URL::to('/trang-chu')}}" class="active">Home</a></li>
-                                <li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
+                                <li><a href="{{URL::to('/trang-chu')}}" class="active">TRANG CHỦ</a></li>
+                                <li class="dropdown"><a href="#">SẢN PHẨM<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
-                                        <li><a href="shop.html">Products</a></li>
-                                        <li><a href="product-details.html">Product Details</a></li> 
-                                        <li><a href="checkout.html">Checkout</a></li> 
-                                        <li><a href="cart.html">Cart</a></li> 
-                                        <li><a href="login.html">Login</a></li> 
+                                        <li><a href="shop.html">SẢN PHẨM</a></li>
+                                
                                     </ul>
                                 </li> 
-                                <li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
-                                        <li><a href="blog.html">Blog List</a></li>
-                                        <li><a href="blog-single.html">Blog Single</a></li>
+                                <li class="dropdown"><a href="#">TIN TỨC<i class="fa fa-angle-down"></i></a>
+                                    
                                     </ul>
                                 </li> 
-                                <li><a href="404.html">404</a></li>
-                                <li><a href="contact-us.html">Contact</a></li>
+                                <li><a href="404.html">GIỎ HÀNG</a></li>
+                                <li><a href="contact-us.html">LIÊN HỆ</a></li>
                             </ul>
                         </div>
                     </div>
@@ -214,107 +209,9 @@
             <div class="row">
                 <div class="col-sm-3">
                     <div class="left-sidebar">
-                        <h2>Category</h2>
+                        <h2>DANH MỤC SẢN PHẨM</h2>
                         <div class="panel-group category-products" id="accordian"><!--category-productsr-->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
-                                            <span class="badge pull-right"><i class="fa fa-plus"></i></span>
-                                            Sportswear
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="sportswear" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <ul>
-                                            <li><a href="#">Nike </a></li>
-                                            <li><a href="#">Under Armour </a></li>
-                                            <li><a href="#">Adidas </a></li>
-                                            <li><a href="#">Puma</a></li>
-                                            <li><a href="#">ASICS </a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordian" href="#mens">
-                                            <span class="badge pull-right"><i class="fa fa-plus"></i></span>
-                                            Mens
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="mens" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <ul>
-                                            <li><a href="#">Fendi</a></li>
-                                            <li><a href="#">Guess</a></li>
-                                            <li><a href="#">Valentino</a></li>
-                                            <li><a href="#">Dior</a></li>
-                                            <li><a href="#">Versace</a></li>
-                                            <li><a href="#">Armani</a></li>
-                                            <li><a href="#">Prada</a></li>
-                                            <li><a href="#">Dolce and Gabbana</a></li>
-                                            <li><a href="#">Chanel</a></li>
-                                            <li><a href="#">Gucci</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
                             
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordian" href="#womens">
-                                            <span class="badge pull-right"><i class="fa fa-plus"></i></span>
-                                            Womens
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="womens" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <ul>
-                                            <li><a href="#">Fendi</a></li>
-                                            <li><a href="#">Guess</a></li>
-                                            <li><a href="#">Valentino</a></li>
-                                            <li><a href="#">Dior</a></li>
-                                            <li><a href="#">Versace</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"><a href="#">Kids</a></h4>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"><a href="#">Fashion</a></h4>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"><a href="#">Households</a></h4>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"><a href="#">Interiors</a></h4>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"><a href="#">Clothing</a></h4>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"><a href="#">Bags</a></h4>
-                                </div>
-                            </div>
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title"><a href="#">Shoes</a></h4>
@@ -327,17 +224,12 @@
                             <div class="brands-name">
                                 <ul class="nav nav-pills nav-stacked">
                                     <li><a href="#"> <span class="pull-right">(50)</span>Acne</a></li>
-                                    <li><a href="#"> <span class="pull-right">(56)</span>Grüne Erde</a></li>
-                                    <li><a href="#"> <span class="pull-right">(27)</span>Albiro</a></li>
-                                    <li><a href="#"> <span class="pull-right">(32)</span>Ronhill</a></li>
-                                    <li><a href="#"> <span class="pull-right">(5)</span>Oddmolly</a></li>
-                                    <li><a href="#"> <span class="pull-right">(9)</span>Boudestijn</a></li>
-                                    <li><a href="#"> <span class="pull-right">(4)</span>Rösch creative culture</a></li>
+                                  
                                 </ul>
                             </div>
                         </div><!--/brands_products-->
                         
-                        <div class="price-range"><!--price-range-->
+                       {{--  <div class="price-range"><!--price-range-->
                             <h2>Price Range</h2>
                             <div class="well text-center">
                                  <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" ><br />
@@ -347,7 +239,7 @@
                         
                         <div class="shipping text-center"><!--shipping-->
                             <img src="{{('public/frontend/images/shipping.jpg')}}" alt="" />
-                        </div><!--/shipping-->
+                        </div><!--/shipping--> --}}
                     
                     </div>
                 </div>
