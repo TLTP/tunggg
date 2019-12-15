@@ -17,7 +17,9 @@ class ProductController extends Controller
         }else{
          return Redirect::to ('admin')-> send();
         }
-    public function add_product(){
+    }
+    public function add_product()
+    {
     	    $this->AuthLogin();
 
     	$cate_product = DB::table('tbl_category_product')->orderby('category_id','desc')->get();
