@@ -56,14 +56,13 @@ class CategoryProduct extends Controller
     	return Redirect::to('all-category-product');
     }
 	   	
-	public function edit_category_product($category_product_id){
-            $this->AuthLogin();
+	public function edit_category_product($category_product_id)
+    {
+        $this->AuthLogin();
+        $edit_category_product = DB::table('tbl_category_product')->where('category_id',$category_product_id)->get(); //lay ra du lieu thuoc category_product_id
+        $manager_category_product = view('admin.edit_category_product')->with('edit_category_product',$edit_category_product);
 
-        $edit_category_product = DB::table('tbl_category_product')->where('category_id',$category_product_id)->get();
-
-        $manager_category_product  = view('admin.edit_category_product')->with('edit_category_product',$edit_category_product);
-
-        return view('admin_layout')->with('admin.edit_category_product', $manager_category_product);
+        return view('admin_layout')->with('admin.edit_category_product',$manager_category_product);
     }
     public function update_category_product(Request $request,$category_product_id){
             $this->AuthLogin();
@@ -79,12 +78,18 @@ class CategoryProduct extends Controller
     }
     public function delete_category_product($category_product_id)
     {     $this->AuthLogin();
-
+        $product=DB::table('tbl_product')->where('category_id',$category_product_id)->value('category_id');
+        if($product==$category_product_id)
+        {
+            session::put('message','Có tồn tại SP, không xoá được');
+            return Redirect::to ('all-category-product');
+        }else{
     	DB::table('tbl_category_product')->where('category_id',$category_product_id)->delete();
     	Session::put('message','Xoá danh mục sản phẩm thành công.');
-
 		return Redirect::to('all-category-product');
+
     }
+}
 //het ham adminpage
     public function show_category_home($category_id){
         $cate_product = DB::table('tbl_category_product')->where('category_status','0')->orderby('category_id','desc')->get();
