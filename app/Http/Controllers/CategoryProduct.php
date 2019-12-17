@@ -89,6 +89,7 @@ class CategoryProduct extends Controller
 		return Redirect::to('all-category-product');
 
     }
+<<<<<<< HEAD
 }
 //het ham adminpage
     public function show_category_home($category_id){
@@ -98,5 +99,8 @@ class CategoryProduct extends Controller
         $category_name = DB::table('tbl_category_product')->where('tbl_category_product.category_id',$category_id)->limit(1)->get();
         return view('pages.category.show_category')->with('category',$cate_product)->with('brand',$brand_product)->with('category_by_id',$category_by_id)->with('category_name',$category_name);
     }
+=======
+
+>>>>>>> parent of 3f2ae15... hoan thanh san pham
 
 }

@@ -122,11 +122,10 @@
                                 </li> 
                                 <li class="dropdown"><a href="#">TIN TỨC<i class="fa fa-angle-down"></i></a>
                                     
-                               
+                                    </ul>
                                 </li> 
                                 <li><a href="404.html">GIỎ HÀNG</a></li>
                                 <li><a href="contact-us.html">LIÊN HỆ</a></li>
-                                     </ul>
                             </ul>
                         </div>
                     </div>
@@ -212,23 +211,26 @@
                     <div class="left-sidebar">
                         <h2>DANH MỤC SẢN PHẨM</h2>
                         <div class="panel-group category-products" id="accordian"><!--category-productsr-->
-                            @foreach($category as$key =>$cate)
+                            
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h4 class="panel-title"><a href="{{URL::to('/danh-muc-san-pham/'.$cate->category_id)}}">{{$cate->category_name}}</a></h4>
+                                    <h4 class="panel-title"><a href="#">Shoes</a></h4>
                                 </div>
                             </div>
-                            @endforeach
                         </div><!--/category-products-->
                     
                         <div class="brands_products"><!--brands_products-->
-                            <h2>THƯƠNG HIỆU</h2>
+                            <h2>Brands</h2>
                             <div class="brands-name">
                                 <ul class="nav nav-pills nav-stacked">
+<<<<<<< HEAD
                                  @foreach($brand as$key =>$brand)
 
                                     <li><a href="{{URL::to('/thuong-hieu-san-pham/'.$brand->brand_id)}}"> <span class="pull-right"></span>{{$brand->brand_name}}</a></li>
                                     @endforeach()
+=======
+                                    <li><a href="#"> <span class="pull-right">(50)</span>Acne</a></li>
+>>>>>>> parent of 3f2ae15... hoan thanh san pham
                                   
                                 </ul>
                             </div>

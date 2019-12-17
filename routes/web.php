@@ -15,9 +15,6 @@ Route::get('/','HomeController@index' );
 
 
 Route::get('/trang-chu','HomeController@index');
-//danhmuc sp trang hcu
-Route::get('/danh-muc-san-pham/{category_id}','CategoryProduct@show_category_home');
-Route::get('/thuong-hieu-san-pham/{brand_id}','BrandProduct@show_brand_home');
 
 
 //backend
